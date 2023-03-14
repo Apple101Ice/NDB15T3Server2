@@ -9,7 +9,7 @@ app.use(express.json())
 
 app.listen(port, () => console.log(`Node app listening on port ${port}!`))
 
-const baseURL = 'http://localhost:2420'
+const baseURL = 'https://ndb15t3server1.onrender.com'
 
 app.post('/fetchData', async function (req, res) {
     const { method, fetchURL, data } = req.body
